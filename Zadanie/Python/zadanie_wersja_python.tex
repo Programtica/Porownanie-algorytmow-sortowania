@@ -1,0 +1,103 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm,
+paperheight=6in,paperwidth=8.5in]{geometry}
+
+\usepackage{enumitem}
+\usepackage{courier}
+\usepackage[T1]{fontenc}
+\usepackage[T1, hyphens]{url}
+\usepackage[polish]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage{amssymb, amsmath}
+\usepackage{listings}
+\usepackage[unicode, pdfdisplaydoctitle]{hyperref}
+\usepackage{xcolor}
+
+\hypersetup{
+	pdftitle={Sortowanie - dydaktyka},
+	pdfsubject={Zadanie 3},
+	pdfauthor={Konstanty Dmochowski, Magdalena Jarmużewska},
+	pdfkeywords={sortowanie, wykres},
+	pdfcreator={},
+	pdfproducer={}
+} %podstawowe elementy kluczowe dokumentu
+
+\pdfpageattr{/Group << /S /Transparency /I true /CS /DeviceRGB>>} 
+
+\lstset{
+	literate=
+	{ą}{{\k a}}
+	{Ą}{{\k A}}
+	{ż}{{\. z}}
+	{Ż}{{\. Z}}
+	{ź}{{\' z}}
+	{Ź}{{\' Z}}
+	{ć}{{\' c}}
+	{Ć}{{\' C}}
+	{ę}{{\k e}}
+	{Ę}{{\k E}}
+	{ó}{{\' o}}
+	{Ó}{{\' O}}
+	{ń}{{\' n}}
+	{Ń}{{\' N}}
+	{ś}{{\' s}}
+	{Ś}{{\' S}}
+	{ł}{{\l}}
+	{Ł}{{\L}}
+}
+
+\definecolor{myBlue}{RGB}{55,118,171}
+\definecolor{orange}{RGB}{255, 211, 67}
+
+\begin{document}
+	\begin{flushleft}
+		\Huge{\textbf{\textcolor{myBlue}{P}\textcolor{orange}{y}\textcolor{myBlue}{t}\textcolor{orange}{h}\textcolor{myBlue}{o}\textcolor{orange}{n}}}
+	\end{flushleft}
+	\begin{center}
+		\textbf{SORTOWANIE - DYDAKTYKA} \\[0.5cm]
+	\end{center}
+	\begin{enumerate}[label=\textbf{\arabic*.}]
+		\setcounter{enumi}{2}
+		\item W tabeli poni{\. z}ej przedstawiono wspomniane wcze{\' s}niej dwa typy sortowa{\' n}, wraz z okre{\' s}lonym rozmiarem tablicy $n$: 
+		\begin{table}[h!]
+			\centering
+			\begin{tabular}{|c|c|c|c|c|c|c|l|l|}
+				\hline
+				$\boldsymbol{n}$ &
+				\textbf{100} &
+				\textbf{1000} &
+				\textbf{5000} &
+				\textbf{10000} &
+				\textbf{50000} &
+				\textbf{100000} &
+				\textbf{500000} &
+				\textbf{1000000} \\ \hline
+				\textbf{\begin{tabular}[c]{@{}c@{}}Sortowanie \\ b{\k a}belkowe\end{tabular}} &
+				&
+				&
+				&
+				&
+				&
+				&
+				&
+				\\ \hline
+				\textbf{\begin{tabular}[c]{@{}c@{}}Sortowanie \\ szybkie\end{tabular}} &
+				&
+				&
+				&
+				&
+				&
+				&
+				&
+				\\ \hline
+			\end{tabular}
+		\end{table}
+		\begin{enumerate}[label=\textbf{\alph*)}]
+			\item Uruchom program \texttt{sortowanie.py} (kod {\' z}r{\' o}d{\l}owy mo{\. z}esz znale{\' z}{\' c} na stronie \url{https://github.com/Programtica/Porownanie-algorytmow-sortowania}, b{\k e}dzie on dla Ciebie dost{\k e}pny przez 30 dni). 
+			\item Wpisz w odpowiednie pola tej tabeli czasy dzia{\l}ania poszczeg{\' o}lnych algorytmów. Na ich podstawie narysuj wykres na kartezja{\' n}skim uk{\l}adzie wsp{\' o}{\l}rz{\k e}dnych (o{\' s} pozioma - rozmiar tablicy, o{\' s} pionowa - czas).
+		\end{enumerate}
+		%Jak s{\k a}dzisz, jaki wykres przedstawiaj{\k a} obydwa algorytmy?
+		Jak s{\k a}dzisz, jaki typ wykresu opisuje poszczeg{\' o}lny algorytm?
+	\end{enumerate}
+\end{document}

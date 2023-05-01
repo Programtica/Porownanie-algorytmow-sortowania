@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1682952488 source:c:\users\kondm\onedrive\pulpit\sortowanie\porównanie algorytmów\porównanie algorytmów sortowania\main.cpp
+	<iostream>
+	<ctime>
+	<iomanip>
+
